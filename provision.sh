@@ -3,6 +3,9 @@
 # This is the provisioning script which is executed when the virtual machine is first created.
 # Here is where we install all of the dependencies for our project.
 
+# Update our package repositories.
+apt-get update
+
 # Rake is a dependency for projects built with Ceedling.
 apt-get -y install rake
 
